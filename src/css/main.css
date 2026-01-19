@@ -71,43 +71,62 @@ section {
 }
 
 /*MOBILE*/
+.primaryHeader .columnRight nav {
+  display: none;
+}
+
+.primaryHeader .columnLeft {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.primaryHeader .columnLeft button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryHeader .columnLeft button svg {
+  stroke: var(--colorText);
+}
+
+.primaryHeader .columnLeft h2 {
+  font-size: 4rem;
+  font-weight: var(--fontWeightBold);
+}
+
 .primaryHeader {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primaryHeader .columnRight .btnOpenMenuMobile {
+  background-color: transparent;
+  border: none;
+}
+
+.primaryHeader .columnRight .btnOpenMenuMobile svg path {
+  stroke: var(--colorBtnOpenMenuMobile);
 }
 
 /*DESKTOP*/
 @media (min-width: 769px) {
-  .primaryHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .primaryHeader .columnLeft {
-    width: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .primaryHeader .columnLeft button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .primaryHeader .columnLeft button svg {
-    stroke: var(--colorText);
+  .primaryHeader .columnRight .btnOpenMenuMobile {
+    display: none;
   }
 
   .primaryHeader .columnRight {
     width: 80%;
   }
 
-  .primaryHeader .columnLeft h2 {
-    font-size: 4rem;
-    font-weight: var(--fontWeightBold);
+  .primaryHeader .columnRight nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 
   .primaryHeader .columnRight nav ul {

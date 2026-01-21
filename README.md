@@ -31,19 +31,21 @@ Este projecto é um portfólio pessoal desenvolvido em HTML, CSS e JavaScript va
 ## 📁 Estrutura do Projecto
 
 ```
-projeto-portfolio/
-├── assets/
+mobile-first-portfolio/
+├── src/
+│   ├── assets/
+│   │   └── images/           # Imagens e ícones do projecto
 │   ├── css/
 │   │   ├── _variables.css    # Variáveis CSS (cores, fontes, etc.)
 │   │   └── main.css          # Estilos principais
-│   ├── images/               # Imagens e ícones do projecto
-│   └── js/
-│       └── main.js           # JavaScript principal (gestão de tema)
-├── about.html                # Página sobre
-├── contact.html              # Página de contacto
-├── index.html                # Página inicial
-├── projects.html             # Página de projectos
-├── stack.html                # Página da stack tecnológica
+│   ├── js/
+│   │   └── main.js           # JavaScript principal (gestão de tema)
+│   ├── about.html            # Página sobre
+│   ├── contact.html          # Página de contacto
+│   ├── index.html            # Página inicial
+│   ├── projects.html         # Página de projectos
+│   └── stack.html            # Página da stack tecnológica
+├── LICENSE                   # Licença do projecto
 └── README.md                 # Documentação do projecto
 ```
 
@@ -64,19 +66,19 @@ projeto-portfolio/
 
 1. Abra o projecto no Visual Studio Code
 2. Instale a extensão "Live Server" se ainda não tiver instalada
-3. Clique com o botão direito no ficheiro `index.html` e seleccione "Open with Live Server"
+3. Clique com o botão direito no ficheiro `src/index.html` e seleccione "Open with Live Server"
 4. O site será aberto automaticamente no seu navegador
 
 ## 🎨 Personalização
 
 ### Cores e Tema
 
-As cores e variáveis de tema podem ser personalizadas no ficheiro `assets/css/_variables.css`.
+As cores e variáveis de tema podem ser personalizadas no ficheiro `src/css/_variables.css`.
 
 ### Conteúdo
 
-- Edite os ficheiros HTML para actualizar o conteúdo
-- Adicione as suas próprias imagens na pasta `assets/images/`
+- Edite os ficheiros HTML na pasta `src/` para actualizar o conteúdo
+- Adicione as suas próprias imagens na pasta `src/assets/images/`
 - Modifique os links de redes sociais nos ficheiros HTML
 
 ## 📝 Licença
